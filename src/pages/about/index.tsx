@@ -168,8 +168,9 @@ qed`}
                         is probably the most exciting proof assistant right now.
                         Why? Its formal foundation together with its
                         metaprogramming framework allows it to be both an
-                        interactive theorem and an automated theorem prover, all
-                        in <i>one</i> purely functional programming language.
+                        interactive theorem prover and an automated theorem
+                        prover, all in <i>one</i> purely functional programming
+                        language.
                     </p>
                     <p className={styles.mainText}>
                         Frankly, Lean is pretty amazing, so Orchid's backend,
