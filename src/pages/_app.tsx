@@ -13,6 +13,10 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
             <Head>
                 <title>Orchid</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-light.min.css"
+                />
             </Head>
             <TopNav />
             <Container>

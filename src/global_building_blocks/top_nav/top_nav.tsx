@@ -10,7 +10,7 @@ interface Props {
 }
 
 const logoHeight = 30;
-const logoWidth = logoHeight * 0.645;
+const logoWidth = logoHeight * 0.587;
 
 const TopNapBar: React.FC<Props> = (props) => {
     return (
@@ -23,7 +23,7 @@ const TopNapBar: React.FC<Props> = (props) => {
                 <Link href="/">
                     <a className={styles.logoContainer}>
                         <Image
-                            src="/o_top.png"
+                            src="/o_logo.png"
                             layout="intrinsic"
                             alt="logo"
                             height={logoHeight}
@@ -41,8 +41,8 @@ const TopNapBar: React.FC<Props> = (props) => {
                     <Nav.Link href="/examples">
                         <div className={styles.linkText}>Examples</div>
                     </Nav.Link>
-                    <Nav.Link href="/contact">
-                        <div className={styles.linkText}>Get Involved</div>
+                    <Nav.Link href="/get-orchid">
+                        <div className={styles.linkText}>Get Orchid</div>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>

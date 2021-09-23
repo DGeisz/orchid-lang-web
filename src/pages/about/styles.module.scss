@@ -1,0 +1,86 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.outerContainer {
+    @extend %flexGrid5;
+    padding: 0 10px;
+}
+
+
+.headerText {
+    font-weight: bold;
+    color: palette.$mediumForestGreen;
+}
+
+.headerTextPink {
+    @extend .headerText;
+    color: palette.$mediumPink;
+    margin-bottom: 30px;
+}
+
+.mainText {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: palette.$hardGray;
+}
+
+.mainTextGreen {
+    @extend .mainText;
+    color: palette.$mediumForestGreen;
+}
+
+
+.kTexContainer {
+    @extend %flexRow;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+
+.kTexRight {
+    @extend %flexGrid1;
+}
+
+.h2Text {
+    @extend .headerText;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.counterContainer {
+    @extend %flexRow;
+}
+
+.blueCoin {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 8px;
+    //margin-bottom: 18px;
+}
+
+.chatBubbles {
+    font-size: 2rem;
+    margin-left: 8px;
+    color: palette.$deepBlue;
+}
+
+.h3Counter {
+    @extend .headerText;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.buttonContainer {
+    @extend %grid5;
+}
+
+.dannyText {
+    font-weight: bold;
+    margin-top: 30px;
+    color: palette.$hardGray;
+}
+
+.founderText {
+    color: palette.$mediumForestGreen;
+}

@@ -10,6 +10,10 @@ export const palette = {
     quasiLightForestGreen: "#81d461",
     darkForestGreen: "#256b0a",
 
+    // Flower suite
+    semiSoftPink: "#f774dd",
+    mediumPink: "#fb607f",
+
     // Ocean suite
     oceanFroth: "#ebfaf8",
     oceanSurf: "#bbede6",

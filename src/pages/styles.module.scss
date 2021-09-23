@@ -101,6 +101,10 @@ $coin-size: 150px;
     cursor: pointer;
 }
 
+.button:hover {
+    color: palette.$white !important;
+}
+
 .comparisonContainer {
 }
 
@@ -111,14 +115,32 @@ $coin-size: 150px;
     margin-bottom: 20px;
 }
 
+.compCodeTitle {
+    color: palette.$mediumForestGreen;
+    font-weight: bold;
+}
+
+.redCodeTitle {
+    @extend .compCodeTitle;
+    color: palette.$danger;
+    margin-bottom: 30px;
+}
+
 .regCodeContainer {
 
 }
 
+.redExText {
+    color: palette.$dangerDark;
+    //font-size: 11pt;
+    font-weight: 500;
+}
 
 .explanationText {
-    color: palette.$mediumGray;
-    font-size: 11pt;
+    margin-top: 10px;
+    color: palette.$darkForestGreen;
+    //font-size: 11pt;
+    font-weight: 500;
 }
 
 .vsContainer {

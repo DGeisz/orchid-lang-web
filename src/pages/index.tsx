@@ -5,23 +5,18 @@ import Image from "next/image";
 import Highlight from "react-highlight";
 import "katex/dist/katex.min.css";
 import { BlockMath } from "react-katex";
+import Link from "next/link";
 
-const logoWidth = 400;
+const logoWidth = 350;
 const logoHeight = 0.6786 * logoWidth;
 
 const Home: React.FC = () => {
     return (
         <>
-            <Head>
-                <link
-                    rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-light.min.css"
-                />
-            </Head>
             <div className={`${styles.headerContainer} p-4`}>
                 <div className={styles.headerTitleContainer}>
                     <Image
-                        src="/orch-g.png"
+                        src="/orch-gsm.png"
                         width={logoWidth}
                         height={logoHeight}
                     />
@@ -37,19 +32,36 @@ const Home: React.FC = () => {
                 </div>
                 <div className={styles.useCaseContainer}>
                     <h2 className={styles.useCaseText}>
-                        <span className={styles.useCasePart}>
-                            Theorem Proving
-                        </span>
-                        <span className={styles.useCasePart}>
-                            Formal Verification
-                        </span>
-                        <span className={styles.useCasePart}>
-                            Math-driven Software
-                        </span>
+                        <a
+                            target="_blank"
+                            href="https://en.wikipedia.org/wiki/Proof_assistant"
+                        >
+                            <span className={styles.useCasePart}>
+                                Theorem Proving
+                            </span>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://en.wikipedia.org/wiki/Formal_verification"
+                        >
+                            <span className={styles.useCasePart}>
+                                Formal Verification
+                            </span>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://en.wikipedia.org/wiki/List_of_open-source_software_for_mathematics"
+                        >
+                            <span className={styles.useCasePart}>
+                                Math-driven Software
+                            </span>
+                        </a>
                     </h2>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <div className={styles.button}>Learn More</div>
+                    <Link href="/about">
+                        <a className={styles.button}>Learn More</a>
+                    </Link>
                 </div>
             </div>
             <div className={`${styles.comparisonContainer} mt-4`}>
@@ -57,13 +69,13 @@ const Home: React.FC = () => {
                     Want a quick comparison?
                 </h2>
                 <div className={styles.regCodeContainer}>
-                    <h5>Other languages:</h5>
+                    <h5 className={styles.redCodeTitle}>Other languages:</h5>
                     <Highlight className="javascript">
                         {`let beta = tau_a * Math.log(1 + ((tau_w + Math.sinh(x)) / (2 + (1 / (zeta ** 2)))))`}
                     </Highlight>
-                    <p className={styles.explanationText}>
+                    <p className={styles.redExText}>
                         The mathematical content of the statement isn't
-                        immediately accessible even if you understand code.
+                        immediately accessible even if you understand code. 👎
                     </p>
                 </div>
                 <div className={styles.vsContainer}>
@@ -72,16 +84,16 @@ const Home: React.FC = () => {
                     <div className={styles.vsBar} />
                 </div>
                 <div className={styles.orchidCodeContainer}>
-                    <h5 className={styles.orchidCodeTitle}>Orchid:</h5>
+                    <h5 className={styles.compCodeTitle}>Orchid:</h5>
                     <div className={styles.kTexContainer}>
                         <BlockMath
-                            math={`\\text{\\color{#bf3d11}{let}} \\; \\beta := \\tau_a \\cdot \\ln\\left(1 + \\frac{\\tau_w  +  \\sinh(x)}{2 + \\dfrac{1}{\\zeta^2}}\\right)`}
+                            math={`\\text{\\color{#bf3d11}{let}} \\; \\beta := \\tau_a \\cdot \\ln\\left[1 + \\frac{\\tau_w  +  \\sinh(x)}{2 + \\dfrac{1}{\\zeta^2}}\\right]`}
                         />
                         <div className={styles.kTexRight} />
                     </div>
                     <p className={styles.explanationText}>
                         The statement is immediately clear to anyone who
-                        understands math.
+                        understands math ...because it looks like math. 😊
                     </p>
                 </div>
             </div>
