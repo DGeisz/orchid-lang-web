@@ -9,6 +9,7 @@
 
 .logoContainer {
     @extend %flexRow;
+    transform: translateY(3px);
 }
 
 .logoText {

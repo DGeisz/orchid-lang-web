@@ -24,10 +24,17 @@ $coin-size: 150px;
 }
 
 .headerTitle {
+    font-size: 200pt;
     text-align: center;
     font-weight: bold;
     display: inline-block;
-    margin: 0 5px;
+    margin-bottom: 100px;
+    color: palette.$hardGray;
+}
+
+.headerColor {
+    color: palette.$mediumForestGreen;
+    font-size: 400pt;
 }
 
 .headerTitleGray {
@@ -70,64 +77,109 @@ $coin-size: 150px;
 }
 
 .useCasePart {
-    margin: 5px 20px;
+    align-self: center;
+    padding-bottom: 2px;
+    margin: 8px 20px;
     font-weight: bold;
     display: inline-block;
+    color: palette.$mediumPink;
+    border-bottom: 1px solid palette.$softGray;
+}
+
+.buttonContainer {
+    @extend %grid5;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: palette.$mediumForestGreen;
+    color: palette.$white;
+    font-weight: bold;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.comparisonContainer {
+}
+
+.comparisonTitle {
+    @extend %grid5;
+    font-weight: bold;
+    color: palette.$hardGray;
+    margin-bottom: 20px;
+}
+
+.regCodeContainer {
+
+}
+
+
+.explanationText {
+    color: palette.$mediumGray;
+    font-size: 11pt;
+}
+
+.vsContainer {
+    @extend %flexRow;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.vsBar {
+    display: flex;
+    margin: 0 20px;
+    flex: 1;
+    height: 1px;
+    background-color: palette.$semiSoftGray;
+}
+
+.vsText {
+    font-weight: bold;
+    color: palette.$lightGray;
+
+}
+
+.orchidCodeContainer {
+
+}
+
+.orchidCodeTitle {
     color: palette.$mediumForestGreen;
 }
 
-.sloganPart {
-    display: inline-block;
-    margin: 0 3px;
+.kTexContainer {
+    @extend %flexRow;
 }
 
-.downloadContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 50px;
+.kTexRight {
+    @extend %flexGrid1;
 }
 
-.downImageContainer {
+.separator {
+    height: 1px;
+    background-color: palette.$semiSoftGray;
+    margin: 40px 0;
+}
+
+.finalPlugContainer {
     @extend %grid5;
+    margin-bottom: 40px;
 }
 
-.downSoon {
-    font-weight: 500;
-    color: palette.$lightGray;
-    line-height: 0;
-    margin-top: 5px;
-}
-
-.appStoreDownload {
-    height: 60px;
-    width: 140px;
-    cursor: pointer;
-    object-fit: contain;
-}
-
-.playStoreDownload {
-    height: 60px;
-    width: 160px;
-    cursor: pointer;
-    object-fit: contain;
-}
-
-.contentContainer {
-    @extend %grid5;
-    margin-top: 50px;
-}
-
-.platformInfo {
+.finalPlug1 {
     font-weight: bold;
     color: palette.$hardGray;
-    //font-size: 18pt;
     text-align: center;
+    line-height: 20pt;
+    margin-bottom: 15px;
 }
 
-.platformInfoBlue {
-    @extend .platformInfo;
-    color: palette.$deepBlue;
-    margin-left: 10px;
+.finalPlug2 {
+    @extend .finalPlug1;
+    color: palette.$mediumPink;
 }
+
+

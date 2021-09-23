@@ -5,6 +5,7 @@ import type { AppProps } from "next/app";
 import TopNav from "../global_building_blocks/top_nav/top_nav";
 import { Container } from "react-bootstrap";
 import Head from "next/head";
+import Footer from "../global_building_blocks/footer/footer";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     return (
@@ -17,6 +18,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
             <Container>
                 <Component {...pageProps} />
             </Container>
+            <Footer />
         </>
     );
 };

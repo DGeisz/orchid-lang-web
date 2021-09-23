@@ -2,18 +2,17 @@ import React from "react";
 import styles from "./top_nav_styles.module.scss";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 interface Props {
     displayClassName: string;
 }
 
-const TopNapBar: React.FC<Props> = (props) => {
-    const router = useRouter();
+const logoHeight = 30;
+const logoWidth = logoHeight * 0.645;
 
+const TopNapBar: React.FC<Props> = (props) => {
     return (
         <Navbar
             collapseOnSelect
@@ -27,8 +26,8 @@ const TopNapBar: React.FC<Props> = (props) => {
                             src="/o_top.png"
                             layout="intrinsic"
                             alt="logo"
-                            height={40}
-                            width={25}
+                            height={logoHeight}
+                            width={logoWidth}
                         />
                     </a>
                 </Link>
@@ -39,8 +38,11 @@ const TopNapBar: React.FC<Props> = (props) => {
                     <Nav.Link href="/about">
                         <div className={styles.linkText}>About</div>
                     </Nav.Link>
-                    <Nav.Link href="/blog">
-                        <div className={styles.linkText}>Blog</div>
+                    <Nav.Link href="/examples">
+                        <div className={styles.linkText}>Examples</div>
+                    </Nav.Link>
+                    <Nav.Link href="/contact">
+                        <div className={styles.linkText}>Get Involved</div>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
