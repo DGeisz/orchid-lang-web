@@ -5,7 +5,17 @@ $black: black;
 // Forest suite
 $softestForestGreen: #effaeb;
 $lightForestGreen: #c1f0af;
+$quasiLightForestGreen: #81d461;
+$mediumForestGreen: #53b030;
 $darkForestGreen: #256b0a;
+
+//export const DARK_FOREST_GREEN = '#256b0a';
+//export const LESS_DARK_FOREST_GREEN = '#308a0e';
+//export const MEDIUM_FOREST_GREEN = '#53b030';
+//export const QUASI_LIGHT_FOREST_GREEN = '#81d461';
+//export const LIGHT_FOREST_GREEN = '#c1f0af';
+//export const SOFT_FOREST_GREEN = '#daf2d0';
+//export const SOFTEST_FOREST_GREEN = '#effaeb';
 
 // Ocean suite
 $oceanFroth: #ebfaf8;
@@ -17,6 +27,7 @@ $beneathTheWaves: #283f52;
 
 // Grays
 $soapstone: #f8f9fa;
+$heavySoap: #f2f4f5;
 $softGray: #e6e6e6;
 $semiSoftGray: #c2c2c2;
 $lightGray: #949494;

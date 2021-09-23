@@ -1,0 +1,30 @@
+@use "src/styles/basic_layouts.module";
+@use "src/styles/palette";
+@use "src/styles/basic_visual";
+
+.tabBar {
+    @extend %flexRow;
+    margin-top: 20px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+%option {
+    @extend %flexGrid5;
+    @extend %no-highlight;
+    cursor: pointer;
+    font-size: 15pt;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.tabOption {
+    @extend %option;
+    color: palette.$lightGray;
+}
+
+.tabOptionActive {
+    @extend %option;
+    color: palette.$black;
+    border-bottom: 3px palette.$deepBlue solid;
+}

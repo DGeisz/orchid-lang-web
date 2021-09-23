@@ -1,3 +1,6 @@
+.pageContainer {
+}
+
 /*
  * Grid styles are defined as follows:
  *
@@ -14,7 +17,7 @@
 
 %flexRow {
     display: -webkit-flex;
-    flex-direction: row;
+    flex-direction: row !important;
 }
 
 .flexColumn {
@@ -197,13 +200,14 @@
 
 .grid5 {
     align-items: center;
+    justify-content: center;
     display: -webkit-flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 %grid5 {
     align-items: center;
+    justify-content: center;
     display: -webkit-flex;
     flex-direction: column;
 }

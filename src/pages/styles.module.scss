@@ -1,0 +1,133 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.headerContainer {
+    @extend %grid5;
+    @extend %shadow-sm;
+    background-color: palette.$white;
+    border-radius: 20px;
+}
+
+$coin-size: 150px;
+
+.coin {
+    height: $coin-size;
+    width: $coin-size;
+}
+
+.headerTitleContainer {
+    @extend %grid5;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.headerTitle {
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.headerTitleGray {
+    @extend .headerTitle;
+    color: palette.$hardGray;
+}
+
+.headerTitleBlue {
+    @extend .headerTitle;
+    color: palette.$deepBlue;
+    text-wrap: none;
+}
+
+.sloganContainer {
+    margin-top: 30px;
+}
+
+
+.sloganText {
+    font-weight: 600;
+    color: palette.$hardGray;
+    text-align: center;
+}
+
+.sloganItalic {
+    font-style: italic;
+}
+
+.aesthetic {
+    color: palette.$mediumForestGreen;
+    font-weight: bold;
+}
+
+.useCaseContainer {
+    @extend %grid5;
+}
+
+.useCaseText {
+    text-align: center;
+}
+
+.useCasePart {
+    margin: 5px 20px;
+    font-weight: bold;
+    display: inline-block;
+    color: palette.$mediumForestGreen;
+}
+
+.sloganPart {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.downloadContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.downImageContainer {
+    @extend %grid5;
+}
+
+.downSoon {
+    font-weight: 500;
+    color: palette.$lightGray;
+    line-height: 0;
+    margin-top: 5px;
+}
+
+.appStoreDownload {
+    height: 60px;
+    width: 140px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.playStoreDownload {
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.contentContainer {
+    @extend %grid5;
+    margin-top: 50px;
+}
+
+.platformInfo {
+    font-weight: bold;
+    color: palette.$hardGray;
+    //font-size: 18pt;
+    text-align: center;
+}
+
+.platformInfoBlue {
+    @extend .platformInfo;
+    color: palette.$deepBlue;
+    margin-left: 10px;
+}

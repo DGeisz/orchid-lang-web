@@ -1,0 +1,67 @@
+@use "./palette";
+@use "src/global_styles/basic_layouts";
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: palette.$soapstone !important;
+    height: 100%;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    width: 400px;
+}
+
+.logotto-text {
+    font-weight: 600;
+    color: palette.$hardGray;
+    font-size: 67pt;
+    cursor: pointer;
+}
+
+.infoButton {
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+    background-color: palette.$deepBlue;
+    padding: 10px 14px;
+    color: palette.$white;
+    font-weight: bold;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.infoButton:hover {
+    color: palette.$white !important;
+}
+
+.infoButton:active {
+    color: palette.$white !important;
+}
+
+.outerContainer {
+    @extend %flexGrid5;
+    padding: 0 10px;
+}
+
+.contentContainer {
+    max-width: 800px;
+    width: 100%;
+}
