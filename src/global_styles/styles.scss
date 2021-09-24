@@ -66,3 +66,17 @@ input[type="file"] {
     max-width: 800px;
     width: 100%;
 }
+
+.button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: palette.$mediumForestGreen;
+    color: palette.$white;
+    font-weight: bold;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: palette.$white !important;
+}

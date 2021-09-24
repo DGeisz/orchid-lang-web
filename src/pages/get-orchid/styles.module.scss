@@ -1,0 +1,24 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.geOuterContainer {
+    @extend %grid2;
+    height: 68vh;
+    margin-top: 20px;
+}
+
+.geHeavyDev {
+    color: palette.$hardGray;
+    margin-bottom: 30px;
+}
+
+.geHeavyDevPink {
+    @extend .geHeavyDev;
+    color: palette.$mediumPink;
+}
+
+.buttonContainer {
+    @extend %grid5;
+    margin-top: 20px;
+}

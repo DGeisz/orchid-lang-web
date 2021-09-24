@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import Highlight from "react-highlight";
@@ -60,7 +59,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className={styles.buttonContainer}>
                     <Link href="/about">
-                        <a className={styles.button}>Learn More</a>
+                        <a className="button">Learn More</a>
                     </Link>
                 </div>
             </div>
@@ -93,7 +92,7 @@ const Home: React.FC = () => {
                     </div>
                     <p className={styles.explanationText}>
                         The statement is immediately clear to anyone who
-                        understands math ...because it looks like math. 😊
+                        understands math ...because it looks like math! 🙌
                     </p>
                 </div>
             </div>
@@ -107,7 +106,9 @@ const Home: React.FC = () => {
                 </h2>
             </div>
             <div className={styles.buttonContainer}>
-                <div className={styles.button}>Unlock the Power</div>
+                <Link href="/get-orchid">
+                    <a className="button">Unlock the Power</a>
+                </Link>
             </div>
         </>
     );

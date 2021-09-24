@@ -19,9 +19,9 @@ const About: React.FC = () => {
                     </h1>
                     <p className={styles.mainText}>
                         Proof assistants aren't anything new. In fact, they're
-                        about as old as computers themselves. But quite frankly,
-                        most theorem proving systems look like ancient relics to
-                        the untrained eye.
+                        about as old as computers themselves. And quite frankly,
+                        most theorem proving systems still look like ancient
+                        relics.
                     </p>
                     <p className={styles.mainText}>
                         Despite their aesthetic appearance, these systems are
@@ -83,16 +83,17 @@ proof
 qed`}
                     </Highlight>
                     <p className={styles.mainText}>
-                        You'd be forgiven if your first impulse was to kick a
-                        tree after looking at that.
+                        Unless you're fluent in Isabelle, you'd be forgiven if
+                        your first impulse was to kick a tree.
                     </p>
                     <p className={styles.mainText}>
                         The simple fact of the matter is that no one would ever{" "}
                         <i>choose</i> to do math in this system unless they{" "}
                         <i>had</i> to. Even if you have a strong background in
-                        programming and math you'd probably have to meticulously
-                        pick through this to even figure out what the proof is
-                        saying, let alone determine if it's correct.
+                        programming and math, you'd probably have to
+                        meticulously pick through this to even figure out what
+                        the proof is saying, let alone determine if it's
+                        correct.
                     </p>
                     <h1 className={`${styles.headerTextPink} display-4`}>
                         Theorem Proving needs a Glow-Up
@@ -109,7 +110,7 @@ qed`}
                     <p className={styles.mainText}>
                         But here's the magical thing: we've already figured out
                         how to do this. Remember MathJax? Or maybe KaTeX? At
-                        least you probably know of LaTeX. The point is, we've
+                        least you probably know LaTeX. The point is, we've
                         figured out how to render math on computers, and we've
                         figured out how to do it extremely quickly. And that
                         means we can build an editor on top of it.
@@ -175,7 +176,10 @@ qed`}
                     <p className={styles.mainText}>
                         Frankly, Lean is pretty amazing, so Orchid's backend,
                         formal foundation, and type system are all directly
-                        modelled off of Lean's. And that's that.
+                        modelled off of Lean's. So yeah, dependent type theory,
+                        calculus of constructions, inductive types, all that
+                        jazz. Check out Lean's website if you want to learn more
+                        about the theory and type system.
                     </p>
                     <h1 className={`${styles.headerTextPink} display-4`}>
                         The Future of Math

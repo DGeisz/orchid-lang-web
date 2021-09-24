@@ -1,0 +1,15 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.outerContainer {
+    @extend %grid2;
+    height: 68vh;
+    margin-top: 20px;
+}
+
+.mainText {
+    font-weight: 500;
+    //font-size: 16pt;
+    color: palette.$lightGray;
+}
